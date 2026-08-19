@@ -1,8 +1,10 @@
 CC = gcc
-CFLAGS = -Wall -g
+CFLAGS = -Wall -Wextra -g
 
-prog1: prog1.c
-	$(CC) $(CFLAGS) -o prog1 prog1.c
+all: prog2
+
+prog2: prog2.c
+	$(CC) $(CFLAGS) prog2.c -o prog2
 
 clean:
-	rm -f prog1
+	rm -f prog2
